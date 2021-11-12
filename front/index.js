@@ -106,7 +106,7 @@ class ListadoProductos extends React.Component{
     }
 
     componentDidMount(){
-        let resp = axios.get("http://localhost:8080/productos");
+        let resp = axios.get("http://20.197.184.41/:8080/productos");
         resp.then(x => {
             this.setState({productos: x.data})
         })
